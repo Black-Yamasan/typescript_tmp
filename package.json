@@ -1,0 +1,45 @@
+{
+  "name": "typescript_tmp",
+  "version": "1.0.0",
+  "description": "typescriptを利用したテンプレート",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "7.9.6",
+    "@babel/preset-env": "7.9.6",
+    "babel-loader": "8.1.0",
+    "browser-sync": "2.26.7",
+    "core-js": "3",
+    "glob": "7.1.6",
+    "gulp-autoprefixer": "7.0.1",
+    "gulp-clean-css": "4.3.0",
+    "gulp-ejs": "4",
+    "gulp-if": "3.0.0",
+    "gulp-notify": "3.2.0",
+    "gulp-plumber": "1.2.1",
+    "gulp-rename": "2.0.0",
+    "gulp-sass": "4.1.0",
+    "gulp-watch": "5.0.1",
+    "gulp4-run-sequence": "1.0.1",
+    "jest": "26.0.1",
+    "minimist": "1.2.5",
+    "stylelint": "13.3.3",
+    "stylelint-config-standard": "20.0.0",
+    "stylelint-scss": "3.17.2",
+    "terser-webpack-plugin": "3.0.1",
+    "ts-loader": "7.0.4",
+    "typescript": "3.8.3",
+    "webpack": "4.43.0",
+    "webpack-stream": "5.2.1"
+  },
+  "scripts": {
+    "dev": "npx gulp build --env dev",
+    "prod": "npx gulp build --env prod",
+    "start": "npx gulp",
+    "lint:style": "stylelint --fix src/**/*.scss",
+    "test": "jest"
+  },
+  "dependencies": {
+    "gulp": "4.0.2"
+  }
+}

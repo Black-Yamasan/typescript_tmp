@@ -1,0 +1,60 @@
+
+/* --HTML-- */
+html {
+  color: $FONT_COLOR;
+  overflow-y: scroll;
+  font-size: $FONT_SIZE;
+}
+
+/* --BODY-- */
+body {
+  font-family: $FONT_MEIRIO;
+  margin: 0;
+  padding: 0;
+  min-width: 1000px;
+  letter-spacing: 0.2em;
+  overflow: hidden;
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
+
+img {
+  vertical-align: bottom;
+  border: none;
+}
+
+/* --OTHER TAGS-- */
+a {
+  overflow: hidden;
+  outline: none;
+  text-decoration: none;
+}
+
+a img {
+  background: none;
+  border: none;
+}
+
+/* clearfix */
+.clearfix {
+  @include clearfix;
+}
+
+/* -----------------------------------------
+  00:style
+------------------------------------------ */
+
+/* -----margin----- */
+$value: 80;
+@while $value > 0 {
+  .mb#{$value} {
+    @include marginBottom($value);
+  }
+  $value: $value - 5;
+}
+
+.mr0 {
+  @include marginRight(0);
+}
