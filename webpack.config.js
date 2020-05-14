@@ -42,13 +42,6 @@ module.exports = {
       }
     ]
   },
-  resolve: {
-    modules: ['node_modules'],
-    extensions: ['.js', '.ts'],
-    alias: {
-      $Class: path.resolve(__dirname, 'src/js/class')
-    }
-  },
   optimization: {
     minimize: isProd,
     minimizer: [
@@ -71,4 +64,11 @@ module.exports = {
       NODE_ENV: JSON.stringify(process.env.NODE_ENV),
     })
   ],
+  resolve: {
+    modules: ['node_modules'],
+    extensions: ['.js', '.ts'],
+    alias: {
+      '@Modules': path.resolve(__dirname, 'src/js/modules')
+    }
+  },
 };
