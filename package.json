@@ -43,5 +43,14 @@
   },
   "dependencies": {
     "gulp": "4.0.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Black-Yamasan/typescript_tmp.git"
+  },
+  "author": "Black-Yamasan",
+  "bugs": {
+    "url": "https://github.com/Black-Yamasan/typescript_tmpe/issues"
+  },
+  "homepage": "https://github.com/Black-Yamasan/typescript_tmp#readme"
 }
